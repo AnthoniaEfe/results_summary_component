@@ -9,7 +9,7 @@ const icons = [reaction, memory, verbal, visual];
 function App() {
   return (
     <div className="font-Hanken-Grotesk min-h-screen flex items-center justify-center bg-blue-50 md:p-4 p-0 m-0 ">
-      <div className="flex flex-col md:flex-row w-full max-w-4xl rounded-none md:rounded-3xl overflow-hidden md:shadow-lg bg-white">
+      <main className="flex flex-col md:flex-row w-full max-w-4xl rounded-none md:rounded-3xl overflow-hidden md:shadow-lg bg-white">
         <div className="bg-gradient-to-b to-Light-royal-blue-background from-Light-slate-blue-background text-white flex flex-col z-15
         items-center justify-center p-10 md:w-1/2 text-center space-y-4 shadow-xl md:shadow-none rounded-t-none rounded-b-3xl md:rounded-3xl">
           <h2 className="text-xl font-semibold">Your Result</h2>
@@ -33,7 +33,7 @@ function App() {
                 className={`flex justify-between items-center p-4 rounded-xl ${item.color}`}
               >
                 <div className="flex items-center gap-2">
-                  <img src={icons[index]}/>
+                  <img src={icons[index]} alt="category icon"/>
                   <span>{item.category}</span>
                 </div>
                 <div className="text-gray-600 font-semibold">
@@ -47,7 +47,7 @@ function App() {
             Continue
           </button>
         </div>
-      </div>
+      </main>
     </div>
   )
 }
